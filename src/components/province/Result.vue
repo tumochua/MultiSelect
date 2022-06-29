@@ -1,9 +1,11 @@
 <template>
-  <div class="result-ctn">
-    <div v-for="(item, index) in listCheck" :key="index">
-      <div class="restlt-item">
-        <span>{{ item.name }}</span>
-        <span class="result-delete" @click="handleDelete(item.code)">x</span>
+  <div v-if="listCheck.length > 0">
+    <div class="result-ctn">
+      <div v-for="(item, index) in listCheck" :key="index">
+        <div class="restlt-item">
+          <span>{{ item.name }}</span>
+          <span class="result-delete" @click="handleDelete(item.code)">x</span>
+        </div>
       </div>
     </div>
   </div>
