@@ -56,7 +56,7 @@ export default {
   methods: {
     handleOk() {
       this.showResult = true;
-      // this.showListApi = false;
+      this.showListApi = false;
     },
     toggleCheckBox(value) {
       this.listCheck = value;
@@ -70,8 +70,6 @@ export default {
       this.showListApi = !this.showListApi;
       if (this.listCheck.length > 0) {
         this.showResult = true;
-      } else {
-        this.showResult = false;
       }
     },
     handleCancel() {
