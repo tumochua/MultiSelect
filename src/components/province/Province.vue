@@ -69,7 +69,7 @@ export default {
     showHideSelect() {
       this.showListApi = !this.showListApi;
       if (this.listCheck.length > 0) {
-        this.showResult = true;
+        this.showResult = !this.showResult;
       }
     },
     handleCancel() {
